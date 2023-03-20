@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie9 ie9" {{ HTML_ATTRS }}><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html {{ HTML_ATTRS }}>
+	<!--<![endif]-->
+
+	<head {{ HEAD_ATTRS }}>
+		{{ HEAD }}
+		<link href="https://fonts.cdnfonts.com/css/muller-narrow" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet" />
+		<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /> -->
+
+		<style>
+			.vue-slider-process {
+				background: #070c1e !important;
+			}
+
+			.vue-slider-dot-handle {
+				width: 20px !important;
+				height: 20px !important;
+				background: #d6eaf8 !important;
+				border-radius: 20px !important;
+				top: -2px !important;
+				position: absolute;
+				box-shadow: none !important;
+			}
+
+			.vue-slider-dot-handle::after {
+				content: '';
+				position: absolute;
+				width: 8px;
+				height: 8px;
+				background: #3498da;
+				border-radius: 10px;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+
+			.vue-slider-dot-tooltip-top {
+				left: 10px !important;
+			}
+		</style>
+	</head>
+
+	<body {{ BODY_ATTRS }}>
+		{{ APP }}
+
+		<script>
+			;(function (w, d, u) {
+				var s = d.createElement('script')
+				s.async = true
+				s.src = u + '?' + ((Date.now() / 60000) | 0)
+				var h = d.getElementsByTagName('script')[0]
+				h.parentNode.insertBefore(s, h)
+			})(window, document, 'https://bitrix.soling.md/upload/crm/site_button/loader_3_dez9c0.js')
+		</script>
+	</body>
+</html>
